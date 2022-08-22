@@ -1,0 +1,10 @@
+<h2>Angular with axios</h2>
+
+<ng-container *ngIf="user">
+  <h2>{{ user.name.first + '' + user.name.last }}</h2>
+  <img src="{{ user.picture.large }}" />
+</ng-container>
+
+<div>
+<button (click)="changeUser()">Change Usesr</button>
+</div>
